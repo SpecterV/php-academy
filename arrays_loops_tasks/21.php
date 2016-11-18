@@ -6,11 +6,14 @@
 333<br>
 4444<br>
 55555</p>*/
-$a = '';
 for ($i=1;$i <= 9; $i++) {
-    $a .= $a;
-    echo $a . "<br>";
+    for ($j=1;$j<=$i;$j++) {
+        echo $i;
+    }
+    echo "<br>";
 }
+
+
 /**
  * Created by PhpStorm.
  * User: alex

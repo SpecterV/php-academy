@@ -9,12 +9,23 @@ $colors = array('red','yellow','blue','gray','maroon','brown','green').
 Пример результата: in "27.html" file<br>
 */
 $colors = array('red','yellow','blue','gray','maroon','brown','green');
-$row = rand(0,10);
-$cols = rand(0,10);
+$rand_color = array_rand($colors);
+$row = 10;
+$cols = 10;
 
-for ($i=0;$i<=) {
+$html = '<table border="1"><tbody>';
 
+for ($i = 1; $i <= $row; $i++) {
+    shuffle($colors);
+    $html .= "<tr><td style='background-color:{$colors[$rand_color]}'>" . rand() . "</td>";
+    for ($j = 1; $j <= $cols-1; $j++) {
+        shuffle($colors);
+        $html .= "<td style='background-color:{$colors[$rand_color]}'>" . rand() . '</td>';
+    }
+    $html .= '</tr>';
 }
+$html .= "</tbody></table>";
+echo $html;
 /**
  * Created by PhpStorm.
  * User: alex

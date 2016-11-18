@@ -11,12 +11,10 @@ if(empty($_POST['numbers'])) {
 </form>';
     die($html);
 }
-$arr[] = $_POST['numbers'];
-echo "<pre>";
-print_r($arr);
-echo "</pre>";
+
 $sum = 0;
-foreach ($arr as $value) {
-    $sum += $value;
+for ($i=0; $i<= strlen($_POST['numbers']); $i++) {
+    $a = substr($_POST['numbers'], $i ,1);
+    $sum += $a;
 }
 echo "Summary = " . $sum;
