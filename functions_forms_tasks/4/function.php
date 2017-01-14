@@ -18,11 +18,13 @@ function writeDir() {
 function pathDir() {
     $dir = scandir($_POST['path']);
     foreach($dir as $index => $path) {
-	if ($path === '.' || $path === '..') {
-	  unset($dir[$index]);
-	}
-        echo "$value"."<br>";
+        if ($path === '.' || $path === '..') {
+            unset($dir[$index]);
+        } else {
+            echo "$path" . "<br>";
+        }
     }
+    //print_r($dir);
 }
 
 /**
@@ -30,8 +32,12 @@ function pathDir() {
  */
 function pathDirTestParameter($a) {
     $dir = scandir($a);
-    foreach($dir as $key => $value) {
-        echo "$value"."<br>";
+    foreach($dir as $index => $path) {
+        if ($path === '.' || $path === '..') {
+            unset($dir[$index]);
+        } else {
+            echo "$path" . "<br>";
+        }
     }
 }
 /**

@@ -9,10 +9,12 @@ if (empty($_POST['text'])) {
     $str = explode(" ", $contents);
     $N = $_POST['count'];
     foreach($str as $key => $value) {
-        if (strlen($value) < $N) {
+        if (strlen($value) > $N) {
+            unset($str[$key]);
+        } else {
             echo $value . " ";
-        } 
-        unset($str[$key]);
+        }
     }
+    echo "<br>" ."Original text is: " ."$contents";
     echo someForm();
 }

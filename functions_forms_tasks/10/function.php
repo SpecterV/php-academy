@@ -13,6 +13,8 @@ function writeString() {
 function uniqueWords() {
     $a = explode(" ", $_POST['string']);
     $b = $a;
+    $count =0;
+    $count1= 0;
     echo "<pre>";
     print_r($a);
     echo "</pre>";

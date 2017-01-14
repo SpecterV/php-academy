@@ -7,8 +7,9 @@ if(empty($_POST['path'])){
 pathDir();
 
 
-//$a = 'c:\xampp\htdocs\php-academy-home'; // tested as parameter for function 'pathDir($a)'
-/*if(empty($a)){
+/*
+$a = 'c:\xampp\htdocs\php-academy-home'; // tested as parameter for function 'pathDir($a)'
+if(empty($a)){
     writeDir();
 }
 pathDirTestParameter($a);*/

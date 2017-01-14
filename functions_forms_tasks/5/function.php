@@ -4,7 +4,7 @@
  */
 function writeDir() {
     $html = '
-    <form action="4.php" method="POST">
+    <form action="5.php" method="POST">
     <input type="text" name="path" placeholder="Path to directory">
     <input type="text" name="name" placeholder="Some words about file">
     <input type="submit" name="send">
