@@ -1,4 +1,13 @@
 <?php
+require('function.php');
+
+if (empty($_POST['string'])) {
+    echo "Please write some string" . "<br>";
+    writeString();
+}
+
+//echo uniqueWords($a, $count);
+echo uniqueWords();
 /**
  * Created by PhpStorm.
  * User: alex

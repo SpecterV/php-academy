@@ -1,4 +1,12 @@
 <?php
+require('function.php');
+$arr = [];
+$arr2 = [];
+if(empty($_POST['string'])){
+    textForm();
+}
+TOP3();
+
 /**
  * Created by PhpStorm.
  * User: alex

@@ -1,7 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 12/10/2016
- * Time: 11:06 AM
- */
+require('function.php');
+// function for compare 2 strings, and return the same words both input strings
+getCommonWords();
